@@ -1,0 +1,13 @@
+<resources>
+    <string-array name="together_spinner_array">
+        <item>밥/카페</item>
+        <item>산책</item>
+        <item>러닝</item>
+        <item>운동</item>
+        <item>독서/스터디</item>
+        <item>취미</item>
+        <item>반려동물</item>
+        <item>육아</item>
+        <item>기타</item>
+    </string-array>
+</resources>

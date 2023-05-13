@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.techtown.dong_nae_life">
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Dang_guen"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:usesCleartextTraffic"
+        tools:targetApi="m">
+        <activity android:name="org.techtown.dang_guen.my_dang_guen.my_dang_guen_buy"></activity>
+        <activity android:name="org.techtown.dang_guen.my_dang_guen.my_dang_guen_complete_select_user" />
+        <activity android:name="org.techtown.dang_guen.my_dang_guen.my_dang_guen_sell" />
+        <activity android:name="org.techtown.dang_guen.home.product_search_result" />
+
+        <service
+            android:name="org.techtown.dang_guen.chatting.chatting_service"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false" />
+
+        <activity
+            android:name="org.techtown.dang_guen.chatting.chatting_main"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="Instantiatable"
+            android:exported="true"/>
+
+        <activity
+            android:name="org.techtown.dang_guen.chatting.chatting_room"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="org.techtown.dang_guen.home.junggo_category_ingi" />
+        <activity android:name="org.techtown.dang_guen.home.junggo_home_category_setting" />
+        <activity android:name="org.techtown.dang_guen.home.junggo_category" />
+        <activity android:name="org.techtown.dang_guen.dong_nae_life.dong_nae_life_reply_update" />
+        <activity
+            android:name="org.techtown.dang_guen.dong_nae_life.dong_nae_life_reply"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="org.techtown.dang_guen.dong_nae_life.dong_nae_life_my_select_together" />
+        <activity android:name="org.techtown.dang_guen.dong_nae_life.dong_nae_life_make_together_age" />
+        <activity android:name="org.techtown.dang_guen.dong_nae_life.dong_nae_life_make_together" />
+        <activity android:name="org.techtown.dang_guen.dong_nae_life.dong_nae_life_comment_update" />
+        <activity android:name="org.techtown.dang_guen.start_atcivity.user_update_info" />
+        <activity android:name="org.techtown.dang_guen.home.product_search" />
+        <activity
+            android:name="org.techtown.dang_guen.home.product_search_result"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name="org.techtown.dang_guen.start_atcivity.user_make"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="org.techtown.dang_guen.start_atcivity.phone_certification" />
+        <activity android:name="org.techtown.dang_guen.start_atcivity.already_user" />
+        <activity android:name="org.techtown.dang_guen.my_dang_guen.setting" />
+        <activity android:name="org.techtown.dang_guen.my_dang_guen.profile_update" />
+        <activity android:name="org.techtown.dang_guen.my_dang_guen.my_dang_guen_like" />
+        <activity
+            android:name="org.techtown.dang_guen.my_dang_guen.my_dang_guen"
+            tools:ignore="Instantiatable" />
+        <activity android:name="org.techtown.dang_guen.home.product_update" />
+        <activity android:name="org.techtown.dang_guen.home.product_other_select" />
+        <activity android:name="org.techtown.dang_guen.home.product_my_select" />
+        <activity android:name="org.techtown.dang_guen.home.product_menu" /> <!-- android:windowSoftInputMode="adjustPan" edittext 키보드 올리기 -->
+        <activity
+            android:name="org.techtown.dang_guen.home.product_make"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="org.techtown.dang_guen.home.product_category" />
+        <activity android:name="org.techtown.dang_guen.start_atcivity.MainActivity" />
+        <activity
+            android:name="org.techtown.dang_guen.home.home"
+            tools:ignore="Instantiatable" />
+        <activity android:name="org.techtown.dang_guen.dong_nae_life.dong_nae_life_update" />
+        <activity
+            android:name="org.techtown.dang_guen.dong_nae_life.dong_nae_life_other_select"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="org.techtown.dang_guen.dong_nae_life.dong_nae_life_my_select"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="org.techtown.dang_guen.dong_nae_life.dong_nae_life_make"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="org.techtown.dang_guen.dong_nae_life.dong_nae_life_main"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="org.techtown.dang_guen.start_atcivity.start_activity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="org.techtown.dang_guen.fragment_start"
+            android:exported="true"
+            tools:ignore="DuplicateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

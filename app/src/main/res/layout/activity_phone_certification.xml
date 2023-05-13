@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232121">
+
+
+    <ImageButton
+        android:id="@+id/phone_certification_back_button"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="#232121"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:tint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="InvalidId,MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/안녕하세요_textview"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="left"
+        android:text="안녕하세요!"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_certification_back_button"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/휴대폰번호로입력해주세요_textview"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="left"
+        android:text="휴대폰 번호로 로그인해주세요."
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/안녕하세요_textview"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/휴대폰번호는안전하게_textview"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="left"
+        android:text="휴대폰 번호는 안전하게 보관되며 이웃들에게 공개되지 않아요."
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/휴대폰번호로입력해주세요_textview"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/phone_number_edittext"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/drawable_white_line"
+        android:hint="   휴대폰 번호(-없이 숫자만 입력)"
+        android:textColor="@color/white"
+        android:textColorHint="#a0a0a0"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/휴대폰번호는안전하게_textview"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/certification_number_get_button"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/drawable_gray_line"
+        android:text="인증문자 받기"
+        android:textColor="#a0a0a0"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number_edittext" />
+
+
+    <Button
+        android:id="@+id/certification_number_get_rebutton"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/drawable_gray_line"
+        android:text="인증문자 다시 받기"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number_edittext" />
+
+
+<!--    버튼색에서 background가 적용이 안되는 이유-->
+<!--    MaterialComponents 디자인을 상속받고 있기 때문-->
+
+<!--    MaterialComponents가 무엇인가?-->
+<!--    MaterialComponents 디자인은 아예 Background를 자체적으로 갖고 있어서 변경되지 않는다고 한다-->
+<!--    -->
+<!--    어떻게 해결을 하였는가?-->
+<!--    res/values/themes/themes.xml->parent='Theme.AppCompat.Light' 바꿔주었다-->
+
+
+    <Button
+        android:id="@+id/Button_countdown"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/drawable_gray_line"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number_edittext" />
+
+
+    <TextView
+        android:id="@+id/어떠한경우에도_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="어떠한 경우에도 타인에게 공유하지 마세요!"
+        android:textColor="#969696"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/certification_number_edittext"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/인증번호확인_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="인증번호 제대로 입력해주세요"
+        android:textColor="#FF0000"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/certification_number_edittext"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+    <EditText
+        android:id="@+id/certification_number_edittext"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/drawable_white_line"
+        android:hint="   인증번호 입력"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="#a0a0a0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/certification_number_get_rebutton"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/certification_number_check_gray_button"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/drawable_gray_line"
+        android:text="인증번호 확인"
+        android:textColor="#b4b4b4"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/어떠한경우에도_textview" />
+
+    <Button
+        android:id="@+id/certification_number_check_orange_button"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/drawable_orange_box"
+        android:text="인증번호 확인"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/어떠한경우에도_textview" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

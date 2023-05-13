@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232121"
+    android:orientation="vertical">
+
+<!--    https://icons8.kr/icons/set/android-studio-->
+<!--    없는 아이콘 다운로드-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/setting_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:tint="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/phone_number_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="중고거래 카테고리"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                app:layout_constraintEnd_toStartOf="@+id/tag_unhandled_key_event_manager"
+                app:layout_constraintStart_toEndOf="@+id/setting_back_button"
+                tools:ignore="MissingConstraints" />
+
+
+            <ImageButton
+                android:id="@+id/tag_unhandled_key_event_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_tune_24"
+                android:tint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        android:textColor="#6e6e6e"
+        android:textSize="9dp" />
+
+
+    <!--    버튼 만듬-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+<!--            첫번째 줄-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/인기매물"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/ic_baseline_star_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/white"
+                        android:text="인기매물"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/디지털기기"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/ic_baseline_laptop_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/white"
+                        android:text="디지털기기"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toEndOf="@+id/인기매물"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+
+                    <Button
+                        android:id="@+id/생활가전"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/ic_baseline_live_tv_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/white"
+                        android:text="생활가전"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toEndOf="@+id/디지털기기"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/가구인테리어"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/ic_baseline_single_bed_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/white"
+                        android:text="가구/인테리어"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/생활가전"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+
+            <!--            두번째 줄-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/생활주방"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/ic_baseline_free_breakfast_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/white"
+                        android:text="생활주방"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+
+                    <Button
+                        android:id="@+id/유아동"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/ic_baseline_child_care_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/white"
+                        android:text="유아동"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toEndOf="@+id/생활주방"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/유아도서"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/ic_baseline_menu_book_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/white"
+                        android:text="유아도서"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toEndOf="@+id/유아동"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/여성의류"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/icons_woman_clothes"
+                        android:drawablePadding="4dp"
+                        android:drawableTint="@color/white"
+                        android:text="여성의류"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/유아도서"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+
+            <!--            세번째 줄-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/여성잡화"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/icons_woman_bag"
+                        android:drawablePadding="4dp"
+                        android:drawableTint="@color/white"
+                        android:text="여성잡화"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+
+                    <Button
+                        android:id="@+id/남성패션잡화"
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/icons_man_clothes"
+                        android:drawablePadding="4dp"
+                        android:drawableTint="@color/white"
+                        android:text="남성패션잡화"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toEndOf="@+id/여성잡화"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/뷰티미용"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/ic_baseline_clean_beuty_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/white"
+                        android:text="뷰티미용"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toEndOf="@+id/남성패션잡화"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/스포츠레저"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/ic_baseline_sports_tennis_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/white"
+                        android:text="스포츠/레저"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/뷰티미용"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <!--            네번째 줄-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/취미게임음반"
+                        android:layout_width="95dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/ic_baseline_videogame_asset_24"
+
+                        android:drawableTint="@color/white"
+                        android:text="취미/게임 음반"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+
+                    <Button
+                        android:id="@+id/도서"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/ic_baseline_library_books_24"
+                        android:drawablePadding="4dp"
+                        android:drawableTint="@color/white"
+                        android:text="도서"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toEndOf="@+id/취미게임음반"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/중고차"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/ic_baseline_directions_car_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/white"
+                        android:text="중고차"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toEndOf="@+id/도서"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/티켓교환권"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/ic_baseline_chrome_ticekt_mode_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/white"
+                        android:text="티켓/교환권"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/중고차"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+
+            <!--            다섯번째 줄-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/가공식품"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/ic_baseline_fastfood_24"
+                        android:drawablePadding="4dp"
+                        android:drawableTint="@color/white"
+                        android:text="가공식품"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+
+                    <Button
+                        android:id="@+id/반려동물용품"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/icons_dog"
+                        android:drawableTint="@color/white"
+                        android:text="반려동물 용품"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toEndOf="@+id/가공식품"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/식물"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/icons8_plant"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/white"
+                        android:text="식물"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toEndOf="@+id/반려동물용품"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:id="@+id/기타중고제품"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:backgroundTint="#232121"
+                        android:drawableTop="@drawable/ic_baseline_inbox_24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/white"
+                        android:text="기타/중고제품"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/식물"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

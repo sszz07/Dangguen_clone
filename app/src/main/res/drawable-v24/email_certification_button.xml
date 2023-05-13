@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    layer-list란 XML 항목을 통해 여러개의 이미지를 한꺼번에 출력할 수 도 있다.-->
+<!--    각 이미지들은 Layer 개념이 가능하다.-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item>
+        <!--        shape-아이템의 모양을 설정하는것-->
+        <shape android:shape="rectangle">
+            <!--            stroke-선을 의미한다-->
+            <!--            android:width 숫자가 올라갈수록 진해진다-->
+            <stroke android:width = "1dp" android:color = "@color/white"/>
+            <corners
+                android:bottomRightRadius="5dp"
+                android:bottomLeftRadius="5dp"
+                android:topLeftRadius="5dp"
+                android:topRightRadius="5dp"/>
+        </shape>
+    </item>
+</layer-list>

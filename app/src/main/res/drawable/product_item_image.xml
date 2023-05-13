@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--shape는 모양이라는 뜻-->
+<!--shape는 xml 뷰의 형태를 바꿔주는 하나의 요소이며-->
+<!--속성으로는 rectangle, oval, line, ring 와 같이 4개의 도형을 지정한다-->
+<!--    conners는 가장자리를 둥글게 만들어주는 요소이다-->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <solid android:color="@color/white" />
+
+    <corners
+        android:radius="10dp"/>
+
+    <stroke
+        android:width="1dp"
+        android:color="@color/black" />
+</shape>

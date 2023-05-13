@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232121"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="모집 조건"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:text="성 별"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/anyone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="누구나"
+                android:textColor="@color/white"
+                android:theme="@style/CustomRadioButton" />
+
+            <RadioButton
+                android:id="@+id/only_woman"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="여자만"
+                android:textColor="@color/white"
+                android:theme="@style/CustomRadioButton" />
+
+            <RadioButton
+                android:id="@+id/only_man"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="남자만"
+                android:textColor="@color/white"
+                android:theme="@style/CustomRadioButton" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="나 이"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/anyone_age"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="누구나"
+                android:textColor="@color/white"
+                android:theme="@style/CustomRadioButton" />
+
+            <RadioButton
+                android:id="@+id/age_insert"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="직접입력"
+                android:textColor="@color/white"
+                android:theme="@style/CustomRadioButton" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/dong_nae_life_make_together_age1_edittext"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=" "
+        android:background="@drawable/drawable_white_line"
+        android:gravity="right"
+        android:paddingTop="20dp"
+        android:text="세"
+        android:textColor="@color/white"
+        android:textColorHint="#8c8c8c" />
+
+
+
+        <EditText
+            android:id="@+id/dong_nae_life_make_together_age2_edittext"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints=" "
+            android:background="@drawable/drawable_white_line"
+            android:gravity="right"
+            android:paddingTop="20dp"
+            android:text="세"
+            android:textColor="@color/white"
+            android:textColorHint="#8c8c8c" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+

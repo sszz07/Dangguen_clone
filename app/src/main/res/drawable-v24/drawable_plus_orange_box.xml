@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    //drawable-그리다-->
+<!--    //selecter-사용자가 좋아요 버튼의 이미지를 클릭을 했을때 색상을 변경해주는 태그이다-->
+<!--    //shape-모양이란 뜻으로 객체를 변형을 시킬수가 있다 색을 넣거나 직각모양을 원 모양으로 변형이 가능하다-->
+<!--    //shape의 속성-->
+<!--    //size는 도형의 크기-->
+
+<!--    //stroke는 도형의 테두리-->
+
+<!--    //solid는 도형의 채우기-->
+
+<!--    //padding은 도형의 안쪽 여백이다.-->
+
+<!--    //gradient 태그를 통해 그라데이션과 corners 태그를 통해 테두리 모양도 설정할 수 있다.-->
+
+    <solid android:color="#DC9146" /> //배경색
+
+    <corners
+        android:topLeftRadius="30dp"
+        android:topRightRadius="30dp"
+        android:bottomLeftRadius="30dp"
+        android:bottomRightRadius="30dp"  /> // 선 휘는각도
+
+    />
+</shape>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/make_user_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/user_identify_dilog_button"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="새 계정을 만들면 이전 게시글 및 모든 정보가 삭제되고 복구할수가 없어요.                          새로 계정을 만드시겠어요?"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/remake_user_dialog_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="clickDialogBtn"
+        android:text="새 계정 만들기"
+        android:background="@drawable/drawable_orange_box"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+
+    <Button
+        android:id="@+id/remake_user_dialog_cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/drawable_white_line"
+        android:onClick="clickDialogBtn"
+        android:text="취 소"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</LinearLayout>

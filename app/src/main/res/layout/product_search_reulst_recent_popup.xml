@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232121"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/product_search_정확순_팝업"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#232121"
+        android:text="정확순"
+        android:gravity="left"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/product_search_최신순_팝업"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#232121"
+        android:text="최신순"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+</LinearLayout>

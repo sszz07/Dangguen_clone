@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chatmessage_item_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="#232121"
+    android:orientation="horizontal"
+    android:gravity="right"
+    android:padding="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/chatting_room_your_out_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="150"
+            android:maxLines="15"
+            android:padding="10dp"
+            android:text="메세지 내용"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout8"
+            tools:ignore="MissingConstraints" />
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#232121"
+        android:gravity="right"
+        android:padding="3dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="3dp">
+
+    <TextView
+        android:id="@+id/chatting_room_my_read_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="읽음/안읽음"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/chatting_room_my_text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시간"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#969696" />
+
+        <TextView
+            android:id="@+id/chatting_room_my_read_check_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="읽음/안읽음"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/chatting_room_my_image_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시간"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="80dp"
+        android:textColor="#969696" />
+
+    <ImageView
+        android:id="@+id/chatting_room_my_select_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+
+    <TextView
+        android:id="@+id/chatting_room_my_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"
+        android:maxLength="150"
+        android:maxLines="15"
+        android:padding="10dp"
+        android:text="메세지 내용"
+        android:textColor="@color/white"
+        android:background="@drawable/chatting_my_orange_box"
+        android:textSize="20dp" />
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+

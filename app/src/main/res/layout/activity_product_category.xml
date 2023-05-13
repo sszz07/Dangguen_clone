@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#232121"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/product_make_category_back_button"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#232121"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:tint="@color/white"
+            tools:ignore="InvalidId,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/product_make_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="카테고리 선택"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        android:textColor="#6e6e6e"
+        android:textSize="9dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#232121"
+        tools:ignore="UselessLeaf"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/product_make_category_digital_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:text="    디지털기기"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_남성의류"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="    남성의류"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_신발"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:text="    신발"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_가방"
+                android:layout_width="match_parent"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:layout_height="50dp"
+                android:text="    가방"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_시계_쥬얼리"
+                android:layout_width="match_parent"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:layout_height="50dp"
+                android:text="    시계/쥬얼리"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_패션_악세서리"
+                android:layout_width="match_parent"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:layout_height="50dp"
+                android:text="    패션/악세서리"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_디지털_가전"
+                android:layout_width="match_parent"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:layout_height="50dp"
+                android:text="    디지털/가전"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_스포츠_레저"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="    스포츠/레저"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_차량_오토바이"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="    차량/오토바이"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_스타굿즈"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:text="    스타굿즈"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_키덜트"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="    키덜트"
+                android:gravity="center_vertical"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_예술_희귀_귀중품"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:text="    예술/희귀/귀중품"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_음악_악기"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:text="    음악/악기"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_도서_티켓_문구"
+                android:layout_width="match_parent"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:layout_height="50dp"
+                android:text="    도서/티켓/문구"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_뷰티_미용"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:text="    뷰티/미용"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_가구_인테리어"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="    가구/인테리어"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_생활_가공식품"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="    생활/가공식품"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_유아동_출산"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="    유아동/출산"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_반려동물용품"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:text="    반려동물용품"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_기타"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:text="    기타"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/product_registration_category_지역서비스"
+                android:layout_width="match_parent"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:layout_height="50dp"
+                android:text="    지역서비스"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_원룸함께살아요"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="    원룸_함께살아요"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_번개나눔"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="    번개나눔"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_구인구직"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:text="    구인구직"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_재능"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="    재능"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/product_registration_category_커뮤니티"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="    커뮤니티"
+                android:background="#232121"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
