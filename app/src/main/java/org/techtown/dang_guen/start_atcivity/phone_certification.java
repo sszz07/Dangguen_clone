@@ -137,8 +137,9 @@ public class phone_certification extends AppCompatActivity {
         //ImageButton id
         phone_certification_back_button = (ImageButton) findViewById(R.id.phone_certification_back_button);
 
-
-
+        Intent intent = getIntent();
+        String 이미존재 = intent.getStringExtra("이미존재함");
+System.out.println(이미존재+"이미존재");
 
 
         /*
@@ -389,10 +390,7 @@ public class phone_certification extends AppCompatActivity {
 
 
     private void parseLoginData(String response, String phone_number) {
-        try {
-            JSONObject jsonObject = new JSONObject(response);
-            if (jsonObject.getString("status").equals("true")) {
-                saveInfo(response);
+
 
 
                 SharedPreferences preferences2 = getSharedPreferences("현재유저", Context.MODE_PRIVATE);
@@ -534,13 +532,6 @@ public class phone_certification extends AppCompatActivity {
                     }
                 });
 
-
-            } else {
-                dialog(); // 아래 showDialog01() 함수 호출
-            }
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
     }
 
     private void saveInfo(String response) {

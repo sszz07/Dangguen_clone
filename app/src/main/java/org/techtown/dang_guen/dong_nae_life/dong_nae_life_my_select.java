@@ -147,7 +147,7 @@ public class dong_nae_life_my_select extends AppCompatActivity {
 
 
         dong_nae_life_comment_imagebutton = (ImageButton) findViewById(R.id.dong_nae_life_comment_imagebutton);
-        dong_nae_life_my_comment_cancle_imagebutton = (ImageButton) findViewById(R.id.dong_nae_life_my_comment_cancle_imagebutton);
+//        dong_nae_life_my_comment_cancle_imagebutton = (ImageButton) findViewById(R.id.dong_nae_life_my_comment_cancle_imagebutton);
         dong_nae_life_my_comment_cancle_imagebutton.setVisibility(View.INVISIBLE);
         dong_nae_life_comment_image_imageview = (ImageView) findViewById(R.id.dong_nae_life_comment_image_imageview);
         dong_nae_life_comment_image_imageview_backgroundtint = (ImageView) findViewById(R.id.dong_nae_life_comment_image_imageview_backgroundtint);

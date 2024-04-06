@@ -60,6 +60,7 @@ public class product_other_select extends AppCompatActivity {
     List<product_data> list = new ArrayList<>();
     product_my_other_select_adapter adapter;
     PrintWriter sendWriter;
+    Button chatting_button;
 
     //게시판 번호저장하기
     ArrayList<String> 게시판번호_arraylist = new ArrayList<>();
@@ -85,6 +86,15 @@ public class product_other_select extends AppCompatActivity {
         product_other_select_category = (TextView) findViewById(R.id.product_other_select_category);
         product_other_select_time = (TextView) findViewById(R.id.product_other_select_time);
         chatting_certification_button = (Button) findViewById(R.id.product_other_select_chatting_button);
+        chatting_button = (Button) findViewById(R.id.chatting_button);
+
+        chatting_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(product_other_select.this, chatting_room.class);
+                startActivity(intent);
+            }
+        });
 
 
         recyclerView = findViewById(R.id.product_other_recyclerView);
@@ -333,7 +343,7 @@ public class product_other_select extends AppCompatActivity {
         product_other_select_time.setText(시간값);
         subject_textview.setText(subject);
         content_textview.setText(content);
-        price_textview.setText(price);
+        price_textview.setText(price+"원");
         seller_nick_textview.setText(seller_nick);
         product_other_select_category.setText(category);
 

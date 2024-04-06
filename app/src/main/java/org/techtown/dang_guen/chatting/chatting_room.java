@@ -1070,105 +1070,105 @@ public class chatting_room extends AppCompatActivity {
     @Override
     public void onResume() {
         super.onResume();
-        chatting_room_menu = (ImageButton) findViewById(R.id.chatting_room_menu_on);
-        //알림 on -> off
-
-        chatting_room_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                /*-------------------------------------------------------------------------------------------------------------*/
-                SharedPreferences preferences = getSharedPreferences("현재유저", 0);
-                String 현재유저_phone_number = preferences.getString("user_number", "");
-
-                pref = getSharedPreferences(string_room_number + 현재유저_phone_number, MODE_PRIVATE);
-                noti_on_off_shared = pref.getString("알림상태", "null");
-                System.out.println(noti_on_off_shared + "noti_on_off_shared");
-
-
-                //알림 off -> on
-                if (noti_on_off_shared.equals("off")) {
-                    PopupMenu popupMenu = new PopupMenu(getApplicationContext(), chatting_room_menu);
-                    //getMenuInflater
-                    //무엇인가?팝메뉴를 사용하기위한 메소드
-                    //왜 사용하는가?
-                    //어떻게 사용하는가? 프래그먼트에서는 어떤 객체인지 확실해야 되서 popupMenu를 붙여줘야 된다->인플레이터 함수를 이용해서 메뉴에 있는 값을 가지고 온다
-                    popupMenu.getMenuInflater().inflate(R.menu.noti_on_menu, popupMenu.getMenu());
-                    popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                        @SuppressLint("NonConstantResourceId")
-                        @Override
-
-                        //boolean onMenuItemClick(MenuItem menuItem)
-                        //무엇인가?팝업메뉴를 사용할때 사용한다
-                        //왜 사용하는가?
-                        //어떻게 사용하는가?
-                        public boolean onMenuItemClick(MenuItem menuItem) {
-                            switch (menuItem.getItemId()) {
-                                case R.id.noti_on:
-                                    if (현재유저_phone_number.equals(my_phone_number)) {
-                                        SharedPreferences.Editor editor = pref.edit();
-                                        editor.remove("알림상태");
-                                        editor.apply();
-                                    } else if (현재유저_phone_number.equals(your_phone_number)) {
-                                        SharedPreferences.Editor editor = pref.edit();
-                                        editor.remove("알림상태");
-                                        editor.apply();
-                                    }
-                                    break;
-                                case R.id.noti_on_chatting_room_out:
-                                    SharedPreferences.Editor editor = pref.edit();
-                                    editor.remove("알림상태");
-                                    editor.apply();
-                                    dialog();
-                                    break;
-                            }
-                            return true;
-                        }
-                    });
-                    popupMenu.show();
-                }      //알림 on -> off
-                else if (noti_on_off_shared.equals("null")) {
-                    PopupMenu popupMenu = new PopupMenu(getApplicationContext(), chatting_room_menu);
-
-                    //getMenuInflater
-                    //무엇인가?팝메뉴를 사용하기위한 메소드
-                    //왜 사용하는가?
-                    //어떻게 사용하는가? 프래그먼트에서는 어떤 객체인지 확실해야 되서 popupMenu를 붙여줘야 된다->인플레이터 함수를 이용해서 메뉴에 있는 값을 가지고 온다
-                    popupMenu.getMenuInflater().inflate(R.menu.noti_off_menu, popupMenu.getMenu());
-                    popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                        @SuppressLint("NonConstantResourceId")
-                        @Override
-                        //boolean onMenuItemClick(MenuItem menuItem)
-                        //무엇인가?팝업메뉴를 사용할때 사용한다
-                        //왜 사용하는가?
-                        //어떻게 사용하는가?
-                        public boolean onMenuItemClick(MenuItem menuItem) {
-                            switch (menuItem.getItemId()) {
-                                case R.id.noti_off:
-                                    if (현재유저_phone_number.equals(my_phone_number)) {
-                                        SharedPreferences.Editor editor = pref.edit();
-                                        editor.putString("알림상태", "off");
-                                        editor.apply();
-                                    } else if (현재유저_phone_number.equals(your_phone_number)) {
-                                        SharedPreferences.Editor editor = pref.edit();
-                                        editor.putString("알림상태", "off");
-                                        editor.apply();
-                                    }
-                                    break;
-                                case R.id.noti_off_chatting_room_out:
-                                    SharedPreferences.Editor editor = pref.edit();
-                                    editor.remove("알림상태");
-                                    editor.apply();
-                                    dialog();
-                                    break;
-
-                            }
-                            return true;
-                        }
-                    });
-                    popupMenu.show();
-                }
-            }
-        });
+//        chatting_room_menu = (ImageButton) findViewById(R.id.chatting_room_menu_on);
+//        //알림 on -> off
+//
+//        chatting_room_menu.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                /*-------------------------------------------------------------------------------------------------------------*/
+//                SharedPreferences preferences = getSharedPreferences("현재유저", 0);
+//                String 현재유저_phone_number = preferences.getString("user_number", "");
+//
+//                pref = getSharedPreferences(string_room_number + 현재유저_phone_number, MODE_PRIVATE);
+//                noti_on_off_shared = pref.getString("알림상태", "null");
+//                System.out.println(noti_on_off_shared + "noti_on_off_shared");
+//
+//
+//                //알림 off -> on
+//                if (noti_on_off_shared.equals("off")) {
+//                    PopupMenu popupMenu = new PopupMenu(getApplicationContext(), chatting_room_menu);
+//                    //getMenuInflater
+//                    //무엇인가?팝메뉴를 사용하기위한 메소드
+//                    //왜 사용하는가?
+//                    //어떻게 사용하는가? 프래그먼트에서는 어떤 객체인지 확실해야 되서 popupMenu를 붙여줘야 된다->인플레이터 함수를 이용해서 메뉴에 있는 값을 가지고 온다
+//                    popupMenu.getMenuInflater().inflate(R.menu.noti_on_menu, popupMenu.getMenu());
+//                    popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+//                        @SuppressLint("NonConstantResourceId")
+//                        @Override
+//
+//                        //boolean onMenuItemClick(MenuItem menuItem)
+//                        //무엇인가?팝업메뉴를 사용할때 사용한다
+//                        //왜 사용하는가?
+//                        //어떻게 사용하는가?
+//                        public boolean onMenuItemClick(MenuItem menuItem) {
+//                            switch (menuItem.getItemId()) {
+//                                case R.id.noti_on:
+//                                    if (현재유저_phone_number.equals(my_phone_number)) {
+//                                        SharedPreferences.Editor editor = pref.edit();
+//                                        editor.remove("알림상태");
+//                                        editor.apply();
+//                                    } else if (현재유저_phone_number.equals(your_phone_number)) {
+//                                        SharedPreferences.Editor editor = pref.edit();
+//                                        editor.remove("알림상태");
+//                                        editor.apply();
+//                                    }
+//                                    break;
+//                                case R.id.noti_on_chatting_room_out:
+//                                    SharedPreferences.Editor editor = pref.edit();
+//                                    editor.remove("알림상태");
+//                                    editor.apply();
+//                                    dialog();
+//                                    break;
+//                            }
+//                            return true;
+//                        }
+//                    });
+//                    popupMenu.show();
+//                }      //알림 on -> off
+//                else if (noti_on_off_shared.equals("null")) {
+//                    PopupMenu popupMenu = new PopupMenu(getApplicationContext(), chatting_room_menu);
+//
+//                    //getMenuInflater
+//                    //무엇인가?팝메뉴를 사용하기위한 메소드
+//                    //왜 사용하는가?
+//                    //어떻게 사용하는가? 프래그먼트에서는 어떤 객체인지 확실해야 되서 popupMenu를 붙여줘야 된다->인플레이터 함수를 이용해서 메뉴에 있는 값을 가지고 온다
+//                    popupMenu.getMenuInflater().inflate(R.menu.noti_off_menu, popupMenu.getMenu());
+//                    popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+//                        @SuppressLint("NonConstantResourceId")
+//                        @Override
+//                        //boolean onMenuItemClick(MenuItem menuItem)
+//                        //무엇인가?팝업메뉴를 사용할때 사용한다
+//                        //왜 사용하는가?
+//                        //어떻게 사용하는가?
+//                        public boolean onMenuItemClick(MenuItem menuItem) {
+//                            switch (menuItem.getItemId()) {
+//                                case R.id.noti_off:
+//                                    if (현재유저_phone_number.equals(my_phone_number)) {
+//                                        SharedPreferences.Editor editor = pref.edit();
+//                                        editor.putString("알림상태", "off");
+//                                        editor.apply();
+//                                    } else if (현재유저_phone_number.equals(your_phone_number)) {
+//                                        SharedPreferences.Editor editor = pref.edit();
+//                                        editor.putString("알림상태", "off");
+//                                        editor.apply();
+//                                    }
+//                                    break;
+//                                case R.id.noti_off_chatting_room_out:
+//                                    SharedPreferences.Editor editor = pref.edit();
+//                                    editor.remove("알림상태");
+//                                    editor.apply();
+//                                    dialog();
+//                                    break;
+//
+//                            }
+//                            return true;
+//                        }
+//                    });
+//                    popupMenu.show();
+//                }
+//            }
+//        });
     }
 
 

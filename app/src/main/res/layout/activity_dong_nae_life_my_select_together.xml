@@ -62,7 +62,7 @@
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:text="  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+            android:text="  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
             android:textColor="#6e6e6e"
             android:textSize="9dp"
             tools:ignore="MissingConstraints"

@@ -14,13 +14,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import org.techtown.dong_nae_life.R;
-
+import org.w3c.dom.Text;
 
 
 public class MainActivity extends AppCompatActivity {
-    Button start_button, login_button;
+    Button start_button;
+    TextView already_user_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
      * */
 
         start_button = (Button) findViewById(R.id.main_activity_시작하기버튼);
+        already_user_button = (TextView) findViewById(R.id.already_user_button);
+
 
             /*
      setOnClickListener
@@ -59,6 +63,15 @@ public class MainActivity extends AppCompatActivity {
                    /*
      startActivity
       * */
+                startActivity(intent);
+            }
+        });
+
+        already_user_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, phone_certification.class);
+                intent.putExtra("이미존재함", "이미존재");
                 startActivity(intent);
             }
         });

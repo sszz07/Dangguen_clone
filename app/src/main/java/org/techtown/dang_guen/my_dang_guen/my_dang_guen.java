@@ -32,10 +32,6 @@ public class my_dang_guen extends Fragment {
     TextView my_dang_guen_nick_textview;
     Button my_dang_guen_setting_button,my_dang_guen_like_button,my_dang_guen_sell_button,my_dang_guen_purchase_button;
 
-    public my_dang_guen() {
-
-    }
-
 
     @Nullable
     @Override

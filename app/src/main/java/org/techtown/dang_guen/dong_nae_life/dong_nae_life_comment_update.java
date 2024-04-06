@@ -58,7 +58,7 @@ public class dong_nae_life_comment_update extends AppCompatActivity {
 
         dong_nae_life_commet_update_image_imageview = (ImageView) findViewById(R.id.dong_nae_life_commet_update_image_imageview);
         dong_nae_life_update_comment_content_edittext = (EditText) findViewById(R.id.dong_nae_life_update_comment_content_edittext);
-        dong_nae_life_my_coment_cancle_imagebutton = (ImageButton) findViewById(R.id.dong_nae_life_my_coment_cancle_imagebutton);
+//        dong_nae_life_my_coment_cancle_imagebutton = (ImageButton) findViewById(R.id.dong_nae_life_my_coment_cancle_imagebutton);
         dong_nae_life_comment_update_imagebutton = (ImageButton) findViewById(R.id.dong_nae_life_comment_update_imagebutton);
         dong_nae_life_comment_update_button = (Button) findViewById(R.id.dong_nae_life_comment_update_button);
 
